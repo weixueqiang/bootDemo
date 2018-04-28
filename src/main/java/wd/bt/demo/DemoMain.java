@@ -13,6 +13,7 @@ public class DemoMain {
 		DemoDao dao = ctx.getBean(DemoDao.class);
 		List<String> listData = dao.listData();
 		listData.forEach((o)->System.out.println(o));
+		ctx.close();
 	}
 	
 }
